@@ -6,6 +6,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+
+        // TEST TEST TEST
         var host = new HostBuilder()
         .ConfigureFunctionsWorkerDefaults()
         .ConfigureServices(services =>
