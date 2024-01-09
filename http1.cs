@@ -23,7 +23,7 @@ namespace PerfTestDLLFA
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
-            serviceUpdater.StartHttpSender();
+            serviceUpdater.StartSender();
 
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
