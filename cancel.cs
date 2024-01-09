@@ -16,7 +16,7 @@ namespace PerfTestDLLFA
             this.serviceUpdater = _serviceUpdater;
         }
 
-        [Function("cancel")]
+        [Function("cancelHttp")]
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
