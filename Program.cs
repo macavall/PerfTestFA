@@ -18,6 +18,7 @@ internal class Program
             services.AddHttpClient();
             //services.AddSingleton<IPerfClass, PerfClass>();
             services.AddSingleton<IServiceUpdater, ServiceUpdater>();
+            services.AddSingleton<IThreadClass, ThreadClass>();
         })
         .Build();
 
